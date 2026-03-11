@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - AHY Games</title>
+    <meta name="description" content="Browse all games by AHY Games - Engaging mobile puzzle games for iOS and Android">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">A</span>
+                AHY Games
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <nav id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="index.html" class="active">Games</a>
+                <a href="sudoku/privacy-policy.html">Privacy Policy</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Games</h1>
+                <p class="page-description">
+                    Discover our collection of engaging mobile puzzle games. 
+                    Each game is crafted with attention to detail and designed to provide hours of entertainment.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="games-grid">
+                <a href="sudoku/index.html" class="game-card">
+                    <div class="game-card-image">🎯</div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Sudoku - Classic Puzzle</h3>
+                        <p class="game-card-description">
+                            Train your brain with the ultimate Sudoku experience. Multiple difficulty levels, 
+                            beautiful design, and intuitive gameplay.
+                        </p>
+                        <div class="game-card-meta">
+                            <span class="tag">Puzzle</span>
+                            <span class="tag">Brain Training</span>
+                            <span class="tag">Single Player</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">AHY Games</div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="index.html">Games</a>
+                <a href="sudoku/privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p class="footer-copyright">© 2026 AHY Games. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
