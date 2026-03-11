@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku - Classic Puzzle - AHY Games</title>
-    <meta name="description" content="Download Sudoku - Classic Puzzle by AHY Games. Train your brain with the ultimate Sudoku experience on Google Play.">
+    <title>Sudoku - Classic Puzzle - AHY</title>
+    <meta name="description" content="Download Sudoku - Classic Puzzle by AHY. Train your brain with the ultimate Sudoku experience on Google Play.">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .game-icon-large {
+            width: 100%;
+            max-width: 200px;
+            aspect-ratio: 1;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            margin: 0 auto 24px;
+            overflow: hidden;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+        }
+        .game-icon-large img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container nav-container">
             <a href="../../index.html" class="logo">
                 <span class="logo-icon">A</span>
-                AHY Games
+                AHY
             </a>
             <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
             <nav id="mainNav">
@@ -30,16 +51,18 @@
     <main>
         <div class="game-detail">
             <div class="game-hero">
-                <div class="game-icon-large">🎯</div>
-                <div class="game-info">
+                <div class="game-icon-large">
+                    <img src="../../images/icon.png" alt="Sudoku - Classic Puzzle">
+                </div>
+                <div class="game-info" style="text-align: center; max-width: 700px; margin: 0 auto;">
                     <h1>Sudoku - Classic Puzzle</h1>
-                    <p class="game-developer">by AHY Games</p>
+                    <p class="game-developer">by AHY</p>
                     <p class="game-description">
                         Train your brain with the ultimate Sudoku experience. Whether you're a beginner or a seasoned 
                         puzzle master, our game offers engaging gameplay with beautiful visuals and intuitive controls.
                         Challenge yourself daily and track your progress as you become a Sudoku master.
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.ahygames.sudoku" target="_blank" class="btn btn-primary">
+                    <a href="https://play.google.com/store/apps/details?id=com.AHY.sudokugame" target="_blank" class="btn btn-primary">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35zm13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27zm3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31zm-6.43 2.21l-2.5 2.5-2.27-1.31c-.34-.27-.57-.69-.57-1.18s.22-.9.57-1.18l2.27-1.32 2.5 2.5z"/>
                         </svg>
@@ -61,11 +84,7 @@
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">✏️</div>
-                        <span class="feature Notes System</span>
-                   -text">Smart </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">💡</div>
-                        <span class="feature-text">Hint System for Help</span>
+                        <span class="feature-text">Smart Notes System</span>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">📅</div>
@@ -77,22 +96,12 @@
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">↩️</div>
-                        <span class="feature-text">Undo & Redo</span>
+                        <span class="feature-text">Undo</span>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">🎯</div>
                         <span class="feature-text">Auto-Save Progress</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="screenshots">
-                <h2>Screenshots</h2>
-                <div class="screenshots-grid">
-                    <div class="screenshot">🧩</div>
-                    <div class="screenshot">🔢</div>
-                    <div class="screenshot">🎮</div>
-                    <div class="screenshot">📱</div>
                 </div>
             </div>
 
@@ -106,13 +115,13 @@
 
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">AHY Games</div>
+            <div class="footer-logo">AHY</div>
             <div class="footer-links">
                 <a href="../../index.html">Home</a>
                 <a href="../index.html">Games</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
             </div>
-            <p class="footer-copyright">© 2026 AHY Games. All rights reserved.</p>
+            <p class="footer-copyright">© 2026 AHY. All rights reserved.</p>
         </div>
     </footer>
 
