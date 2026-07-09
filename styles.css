@@ -234,6 +234,7 @@ body {
 .privacy-link {
     display: inline-block;
     margin-top: 15px;
+    margin-right: 20px;
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9rem;
@@ -243,6 +244,12 @@ body {
 .privacy-link:hover {
     color: var(--text-color);
     text-decoration: underline;
+}
+
+.game-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Coming Soon Style */
