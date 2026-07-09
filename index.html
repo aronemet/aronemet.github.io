@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHY Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="logo-animation">AHY</div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">AHY</div>
+            </div>
+        </header>
+
+        <!-- Games Grid -->
+        <main class="games-container">
+            <div class="container">
+                <!-- Game 1 - Sudoku -->
+                <div class="game-item">
+                    <div class="game-images">
+                        <img src="sudoku-icon.png" alt="Sudoku Icon" class="game-icon">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <img src="sudoku-screenshot.png" alt="Sudoku Game" class="game-screenshot-phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">Sudoku - Classic Puzzle</h2>
+                        <p class="game-description">
+                            Train your brain with the ultimate Sudoku experience. Multiple difficulty levels, 
+                            beautiful design, and intuitive gameplay. Perfect for puzzle enthusiasts seeking 
+                            a challenge that respects your time and intelligence.
+                        </p>
+                        <div class="store-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.AHY.sudokugame" target="_blank" class="store-button google-store">
+                                <svg viewBox="0 0 24 24" class="store-icon">
+                                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="privacy-policy-sudoku.html" class="privacy-link">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future games -->
+                <div class="game-item coming-soon">
+                    <div class="game-images">
+                        <div class="placeholder-image">
+                            <span>Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h2 class="game-title">More Games Coming Soon</h2>
+                        <p class="game-description">
+                            We're constantly working on new experiences. Stay tuned for our next release.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    Message sent successfully!
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 AHY Games</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
