@@ -33,32 +33,6 @@ document.querySelectorAll('.game-item').forEach(item => {
     observer.observe(item);
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-const successMessage = document.getElementById('successMessage');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    console.log('Form submitted:', { name, email, message });
-    
-    // Show success message
-    successMessage.classList.add('show');
-    
-    // Reset form
-    contactForm.reset();
-    
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-        successMessage.classList.remove('show');
-    }, 5000);
-});
-
 // Smooth scroll for any anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

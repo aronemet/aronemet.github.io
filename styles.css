@@ -372,6 +372,18 @@ body {
 .footer p {
     color: var(--text-secondary);
     font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.footer-contact {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact:hover {
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
 /* Responsive Design */
