@@ -11,7 +11,26 @@ window.addEventListener('load', function() {
         setTimeout(function() {
             loadingScreen.style.display = 'none';
         }, 500);
-    }, 1500); // Show loading screen for 1.5 seconds
+    }, 1500);
+});
+
+// Scroll animation for game items
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+
+// Observe all game items
+document.querySelectorAll('.game-item').forEach(item => {
+    observer.observe(item);
 });
 
 // Contact form handling

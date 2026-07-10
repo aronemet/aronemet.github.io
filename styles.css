@@ -117,6 +117,22 @@ body {
     gap: 60px;
     margin-bottom: 120px;
     align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.game-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.game-item.reverse {
+    direction: rtl;
+}
+
+.game-item.reverse > * {
+    direction: ltr;
 }
 
 .game-item:last-child {
@@ -234,7 +250,7 @@ body {
 .game-links {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
     margin-top: 15px;
 }
 
@@ -364,6 +380,10 @@ body {
         grid-template-columns: 1fr;
         gap: 40px;
         margin-bottom: 80px;
+    }
+
+    .game-item.reverse {
+        direction: ltr;
     }
 
     .game-title {
